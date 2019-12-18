@@ -133,10 +133,10 @@ body {
 .navbar-nav li a {
     text-align: left;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 25px;
     font-family: 'Segoe UI Regular';
-    letter-spacing: 1.2px;
+    letter-spacing: 1.8px;
     color: #333333;
     text-transform: uppercase;
     text-decoration: none;
@@ -228,7 +228,7 @@ body {
     font-size: 12px;
     line-height: 25px;
     font-family: 'Segoe UI Regular';
-    letter-spacing: 1.2px;
+    letter-spacing: 1.8px;
     color: #333333;
     margin: 0 0 2px 0;
     text-transform: uppercase;
@@ -264,7 +264,12 @@ body {
 
 .icons-wrap img,
 .icons-wrap a {
+.icons-wrap img {
     margin: 0 7px 0 0;
+}
+
+.icons-wrap a {
+    margin: 0;
 }
 
 .icons-wrap a {
@@ -323,7 +328,7 @@ body {
     font-size: 12px;
     line-height: 25px;
     font-family: 'Segoe UI Regular';
-    letter-spacing: 1.2px;
+    letter-spacing: 1.6px;
     color: #333333;
     text-align: center;
     text-transform: uppercase;
