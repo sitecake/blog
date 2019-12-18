@@ -111,6 +111,34 @@ body {
     grid-column-gap: 22px;
 }
 
+
+
+/** Font Styles **/
+
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 29px;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 /** Navbar styles **/
 .nav {
     position: relative;
@@ -183,21 +211,6 @@ body {
     display: none;
 }
 
-/*.hero:before,
-.hero:after {
-	content: "";
-	position: absolute;
-	width: 100vw;
-	height: 1px;
-	background-image: linear-gradient(to right, #929292 10%, rgba(255, 255, 255, 0) 0%);
-    background-position: top;
-    background-size: 10px 2px;
-    background-repeat: repeat-x;
-  	top: 0;
-  	left: -50%;
-  	/*right: 0;*/
-}
-
 .hero:after {
     bottom: 0;
     top: auto;
@@ -209,10 +222,6 @@ body {
     overflow: hidden;
 }
 
-/*.hero .hero-image .hero-image-wrap img {
-	max-width: 100%;
-}*/
-
 .hero .hero-text {
     text-align: center;
     display: flex;
@@ -220,50 +229,38 @@ body {
     align-self: center;
 }
 
-.hero .hero-text h3
-
-/*.hero-top-subtitle*/
-    {
-    font-weight: normal;
+.hero-text-wrap h3,
+.hero-text-wrap h3 a {
     font-size: 12px;
     line-height: 25px;
     font-family: 'Segoe UI Regular';
     letter-spacing: 1.8px;
-    color: #333333;
     margin: 0 0 2px 0;
     text-transform: uppercase;
 }
 
-.hero .hero-text h1,
-.card .card-body h1
-
-/*.hero-main-title */
-    {
-    font-weight: normal;
+.hero-text-wrap h1,
+.hero-text-wrap h1 a,
+.card h1 {
     font-size: 36px;
     line-height: 45px;
-    font-family: 'Merriweather', serif;
-    letter-spacing: 0;
-    color: #333333;
     margin: 0 0 11px 0;
 }
 
-.hero .hero-text h4
-
-/*.hero-bottom-subtitle*/
-    {
+.hero-text-wrap h4,
+.hero-text-wrap h4 a {
     font-weight: normal;
     font-style: italic;
     font-size: 16px;
     line-height: 25px;
-    font-family: 'Merriweather', serif;
     letter-spacing: 0.8px;
-    color: #000000;
+    font-family: 'Merriweather', serif;
+}
+
+.hero-text-wrap h4 {
     margin: 0 0 50px 0;
 }
 
-.icons-wrap img,
-.icons-wrap a {
 .icons-wrap img {
     margin: 0 7px 0 0;
 }
@@ -277,14 +274,21 @@ body {
 }
 
 /** Index page - blog left sidebar text **/
-.blog-sidebar-text p {
+.blog-sidebar-text p,
+.blog-sidebar-text p a {
+    text-align: left;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Segoe UI Regular';
+}
+
+.blog-sidebar-text p,
+.blog-sidebar-text p a {
     text-align: left;
     font-weight: normal;
     font-size: 16px;
     line-height: 21px;
     font-family: 'Segoe UI Regular';
-    letter-spacing: 0;
-    color: #333333;
     margin: 0;
 }
 
@@ -295,108 +299,79 @@ body {
     border: 0;
 }
 
-.card-body {
-    padding: 0;
-}
-
-.card-img-top {
+.card img {
     width: 256px;
     height: 256px;
     margin: 0 0 19px 0;
     overflow: hidden;
 }
 
-.card .card-body h2
-
-/*.card-title*/
-    {
+.card h2,
+.card h2 a {
     text-align: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
     font-family: 'Merriweather', serif;
-    letter-spacing: 0;
-    color: #333333;
     margin: 0;
 }
 
-.card .card-body h3
-
-/*.card-text*/
-    {
+.card h3,
+.card h3 a {
     font-weight: normal;
     font-size: 12px;
     line-height: 25px;
     font-family: 'Segoe UI Regular';
     letter-spacing: 1.6px;
-    color: #333333;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
 }
 
-.card .card-body a {
-    color: #333333;
-}
 
 /** Article page **/
 
 /** Blog Content and Navigation **/
-.blog-item__text p,
-.blog-item__list ul {
+.blog-content p,
+.blog-content ul {
     text-align: left;
     font-weight: normal;
     font-size: 17px;
     line-height: 29px;
     font-family: 'Merriweather', serif;
-    letter-spacing: 0;
-    color: #333333;
     max-width: 83%;
     margin-left: auto;
 }
 
-.blog-item__text p:first-of-type {
+.blog-content p:first-of-type {
     margin-top: 0;
 }
 
-.blog-item__image {
+.blog-content img {
     margin: 23px 0;
 }
 
-.blog-item__list ul {
-    list-style: none;
+.blog-content ul {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
     list-style-position: outside;
 }
 
-.blog-item__list li {
-    padding-left: 16px;
-    position: relative;
-}
-
-.blog-item__list li:before {
-    content: "*";
-    position: absolute;
-    left: -10px;
-}
-
-.blog-sidebar-list ul {
+.blog-navigation ul {
     list-style-type: none;
-    text-align: left;
-    letter-spacing: 0;
-    color: #333333;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    font-family: 'Segoe UI Regular';
     padding: 0;
     margin: 0;
 }
 
-.blog-sidebar-list ul li {
+.blog-navigation li,
+.blog-navigation li a {
     padding-bottom: 20px;
+    line-height: 16px;
+    font-family: 'Segoe UI Regular';
+    font-weight: 400;
+    font-size: 12px;
+
 }
 
 .dashed {
@@ -445,20 +420,24 @@ body {
         max-width: 57px;
     }
 
-    .card-img-top {
+    .card img {
         width: 100%;
         height: auto;
     }
 
-    .card-img-top img {
-        width: 100%;
-    }
-
     .navbar-collapse,
-    .blog-item__image,
     .dashed,
     .blog-navigation {
         display: none;
+    }
+
+    .blog-content img {
+        width: 100%;
+    }
+
+    .blog-content p {
+        margin: 0;
+        max-width: 100%;
     }
 
     .navbar-toggler {
@@ -509,30 +488,25 @@ body {
     }
 
     .hero .hero-text h1,
-    .card .card-body h1
-
-    /*.hero-main-title*/
-        {
+    .card h1 {
         font-size: 32px;
         line-height: 40px;
     }
 
-    .hero .hero-text h4
-
-    /*.hero-bottom-subtitle*/
-        {
+    .hero .hero-text h4 {
         font-size: 15px;
         margin: 0 0 15px 0;
     }
 
-    .blog-item__text p,
-    .blog-item__list ul {
+    .blog-content p,
+    .blog-content ul {
         max-width: initial;
         font-size: 16px;
         line-height: 27px;
     }
 
-    .blog-item__list li:before {
-        left: 0;
+
+    .blog-content ul {
+        list-style-position: inside;
+        margin-left: 10%;
     }
-}
