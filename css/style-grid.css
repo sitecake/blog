@@ -216,7 +216,7 @@ a:hover {
     top: auto;
 }
 
-*/ .hero .hero-image .hero-image-wrap {
+.hero .hero-image .hero-image-wrap {
     width: 478px;
     height: 478px;
     overflow: hidden;
